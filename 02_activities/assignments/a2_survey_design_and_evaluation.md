@@ -25,7 +25,7 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 2. Sample size
 3. Target population
 4. Sampling frame
-5. Survey mode(s) 
+5. Survey mode(s)
 6. Timeline
 7. Response rate
 8. Weights
@@ -40,30 +40,89 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The purpose of this survey is to understand why entry- and lower-level employees at a large tech company may be dissatisfied and considering leaving. The company aims to identify areas of improvement that could increase retention and job satisfaction.
+
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+- Target population: All current employees in entry- and lower- level positions across departments at the tech company.
+- Sampling frame: The company’s internal HR database of active employees, including job titles, departments, and contact information.
+- Sampling units: Individual current employees in entry- and lower-level roles.
+- Observational units: The same individual employees who will respond to the survey.
+- Sampling strategy: Stratified random sampling by department (e.g. engineering, customer support, operations) to ensure representation across all areas of the company.
+
+Note: I am excluding former employees due to practical challenges in follow-up and contact. This limits our ability to capture direct post-exit feedback and introduces potential non-response bias regarding turnover motivations.
+
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. How satisfied are you with your current role at the company?
+(1) Very dissatisfied 
+(2) Somewhat dissatisfied
+(3) Neutral    
+(4) Somewhat satisfied
+(5) Very satisfied
+
+2. Do you feel there are clear opportunities for advancement within your team?
+- Yes
+- No
+- Unsure
+
+3. Do you feel there are clear opportunities for advancement within your department?
+- Yes
+- No
+- Unsure
+
+4. To what extent does your manager support your professional development?
+(1) Not at all
+(2) Slightly
+(3) Moderately
+(4) Very
+(5) Extremely
+
+5. To what extent do you feel your workload is manageable during a typical week?
+(1) Not at all
+(2) Slightly
+(3) Moderately
+(4) Very
+(5) Extremely
+
+6. To what extent do you feel your contributions are recognized?
+(1) Not at all
+(2) Slightly
+(3) Moderately
+(4) Very
+(5) Extremely
+
+7. How likely are you to still be working at this company one year from now?
+(1) Very unlikely
+(2) Somewhat unlikely
+(3) Neutral
+(4) Somewhat likely
+(5) Very likely
+
+8. [If Q7=(1) Very unlikely or (2) Somewhat unlikely] 
+What are the top three reasons you are considering leaving the company? (Select up to 3)
+- Lack of career advancement
+- Inadequate compensation 
+- Inadequate benefits
+- Heavy workload
+- Poor management or supervision
+- Lack of recognition or support
+- Work-life imbalance
+- Company culture
+- Better opportunities elsewhere
+- Other (please specify): __________
+
+9. What change(s) would most improve your experience working here? (Open-ended)
+____________________________________________________________________________________
+
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +130,44 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+
+1. Sample type: A cross-sectional, stratified, two-stage probability sample with rejective subsampling for non-volunteers. First-stage units are telephone number groups; second stage units are individuals aged 15 and over within households.
+
+2. Sample size: About 24,000 (Field sampled 50,000 households, out of which 40,000 invitation letters sent and 24,000 expected completed interviews)
+
+3. Target population: All individuals aged 15 years and older living in private households across Canada's 10 provinces. Excludes residents of territories and full-time institutional residents.
+
+4. Sampling frame: A combined frame using landline and cellular numbers (linked to addresses) from Census data and administrative sources, integrated with the dwelling frame. 
+
+5. Survey mode(s): Mixed-mode data collection: Computer-Assisted Telephone Interviews (CATI) and electronic self-administered questionnaires (EQ). The latter was introduced in 2018.
+
+6. Timeline: 2018-09-04 to 2018-12-28
+
+7. Response rate: Overall 41.9% response rate.
+
+8. Weights: Person-level weight for population estimation. Weights were adjusted using 2017 Canadian Income Survey distributions by province. Bootstrap weights provided for variance estimation.
+
+9. Data processing: Data underwent structured processing under the SSPE system, with automated and manual edits to ensure flow control, range validity, and family relation consistency.
+
+10. Cleaning, imputation, etc: Donor imputation with nearest-neighbor match, resorted to mean imputation when needed. Income data were obtained via tax record linkage (T1FF), covering about 82% of respondents, missing income imputed.
+
+11. Sources of error: Sampling error (variance estimated via bootstrap weights)
+Non-sampling errors:
+- Coverage bias (households without phone)
+- Nonresponse error at household and person levels
+- Measurement error (recall or social desirability)
+- Processing errors (minimized through CATI and quality control)
+
+12. Limitations, known biases, etc:
+- Excludes territories and institutionalized populations
+- Introduction of online mode in 2018 may limit comparability with previous cycles
+- Some households without phone access excluded
+- Proxy interviews not allowed could affect representativeness
+- Income linkage was optional, so may result in non-consent bias
+
+
+13. Link to documentation and any additional sources used: https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=796234#a2
+
 ```
 
 ## Rubric
